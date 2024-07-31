@@ -40,7 +40,7 @@ To install the standalone version of Volatility on Linux, follow these steps:
 
     `sudo mv volatility /usr/bin`
 
-5. ## `xdot` must be installed for visualizing process trees**
+5. ## `xdot` must be installed for visualizing process trees 
 
 
 
