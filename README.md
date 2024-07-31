@@ -3,6 +3,7 @@ AutoProbe is a Bash script designed to automate the process of investigating mem
 
 ![Screenshot (91)](https://github.com/user-attachments/assets/9f4c6614-d388-4901-90f9-2c18f22619f6)
 
+ ![png](https://github.com/rivian96/autoprobe/blob/main/images/Screenshot%20(185).png)
 
 ## Features
 ![Screenshot (93)](https://github.com/user-attachments/assets/b24da430-eb60-42d8-9cef-37c0ed64010b)
