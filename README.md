@@ -1,12 +1,10 @@
 # AutoProbe: Memory Forensics Automation Script
 AutoProbe is a Bash script designed to automate the process of investigating memory dumps for suspicious processes. The script utilizes the Volatility framework to perform a series of checks and analyses, making it easier for forensic analysts to identify potentially malicious activities within memory images.
 
-![Screenshot (91)](https://github.com/user-attachments/assets/9f4c6614-d388-4901-90f9-2c18f22619f6)
+![png](images/autoprobe1.png)
 
- ![png](https://github.com/rivian96/autoprobe/blob/main/images/Screenshot%20(185).png)
-
-## Features
-![Screenshot (93)](https://github.com/user-attachments/assets/b24da430-eb60-42d8-9cef-37c0ed64010b)
+# Features
+![png](images/autoprobe2.png)
 
 - Automatically identifies the memory image
 - Lists processes using `pslist`, `psscan`, and `psxview`
@@ -18,7 +16,7 @@ AutoProbe is a Bash script designed to automate the process of investigating mem
 
 
 
- ## ** PREREQUISITES **
+ ## **PREREQUISITES**
 
 ## Installing Volatility Standalone on Linux
 
@@ -28,27 +26,21 @@ To install the standalone version of Volatility on Linux, follow these steps:
 
    Go to the [Volatility 2.6.1 release page](https://github.com/volatilityfoundation/volatility/releases/tag/2.6.1) and download the standalone file for Linux.
 
-   ![Screenshot (85)](https://github.com/user-attachments/assets/b99a52ba-ba02-40af-b330-426adf1a360d)
-
 2. ## **Unzip the File**
 
-  ** Unzip the downloaded file. You can use the `unzip` command in the terminal:**
+     **Unzip the downloaded file. You can use the `unzip` command in the terminal:**
 
-   ![Screenshot (86)](https://github.com/user-attachments/assets/dcbb1110-ed65-4c57-aaba-0360d6b742fe)
 
-`
   
-3. ## **Rename the Standalone File**
-   ![Screenshot (87)](https://github.com/user-attachments/assets/836b0240-ec91-428b-9300-7825bc8c8da7)
+3.  ## **Rename the Standalone File**
 
-
+    `mv <filename> volatility`
+ 
 4. ## **move the file to /usr/bin**
-   ![Screenshot (90)](https://github.com/user-attachments/assets/78689c13-ebaa-427d-9cc5-34621fb473f8)
 
+    `sudo mv volatility /usr/bin`
 
-5.  ## `xdot` must be installed for visualizing process trees**
-
-   ![Screenshot (89)](https://github.com/user-attachments/assets/242bc6df-62ca-4ca9-bdb3-e5b426d4d0d5)
+5. ## `xdot` must be installed for visualizing process trees**
 
 
 
@@ -73,20 +65,8 @@ To install the standalone version of Volatility on Linux, follow these steps:
 
     Replace `<memory image>` with the path to your memory dump file.
 
-## Menu Options
 
-Upon running the script, you'll be presented with the following menu options:
 
-1. **Process Investigation**
-    - Lists processes using `pslist`, `psscan`, and `psxview`
-    - Identifies suspicious processes by comparing results
-    - Categorizes processes as singleton, Windows core, or non-core
-    - Inspects handles and registry keys for selected processes
-    - Dumps processes and analyzes loaded DLLs
-    - scans dumped files hashses from virustotal
-
-2. **Exit**
-    - Exits the script
 
 ## Example Output
 
@@ -100,7 +80,7 @@ Contributions are welcome! Please fork the repository and create a pull request 
 
 ## License
 
-This project is licensed under the MIT License. 
+This project is licensed under the GNU License. 
 
 
 
